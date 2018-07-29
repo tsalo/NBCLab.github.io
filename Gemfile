@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
+gem 'jekyll-gallery-generator'
 #gem 'jekyll-sass-converter'
 
 # Avoid polling for changes
