@@ -39,6 +39,11 @@ h6, .h6 { font-size: ceil($font-size-base * 0.85); }  /* ~12px */
 }
 
 /* some hyperlink stuff */
+a.off {
+	color: inherit;
+	border-bottom: none;
+}
+
 a.anchor {
     display: block;
     position: relative;
@@ -145,11 +150,6 @@ p {
 	height: 5px;
 }
 
-a.off {
-	color: inherit;
-	border-bottom: none;
-}
-
 /*a {
 	border-bottom: thin dotted;
 }*/
@@ -159,7 +159,6 @@ a.off {
 	display: block;
 	width: 50%;
 	height: auto; /*a replace with auto after adding real photo */
-	vertical-align: middle;
 }
 
 .resize_fit_center {
@@ -193,19 +192,7 @@ a.off {
 	}
 }
 
-.construction {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	color: #880000;
-	font-size: $font-size-base*2;
-}
-
 // emphases
-
-term {
-	font-style: italic;
-}
 
 strong {
 	font-style: bold;
@@ -250,22 +237,12 @@ strong {
 	}
 }
 
-.dropdown-menu {
-	font-size: 25px;
-	font-weight: $font-weight-base;
-}
-
-.dropdown {
-	font-weight: $font-weight-base;
-}
-
 .navbar-small {
 	font-size: 15px;
 	font-weight: $font-weight-base;
 }
 
 // projects pages
-
 .project-image {
 	width: 600px;
 	background-color: #FFFFCC;
@@ -276,10 +253,10 @@ strong {
 }
 
 // carousel
-
 .carousel-fade {
   opacity: 1;
 }
+
 .carousel-fade .item {
   -moz-transition: opacity ease-in-out 3s;
   -o-transition: opacity ease-in-out 3s;
@@ -293,10 +270,12 @@ strong {
   display:block !important;
   z-index:1;
 }
+
 .carousel-fade .item:first-child {
   top:auto;
   position:relative;
 }
+
 .carousel-fade .item.active {
   opacity: 1;
   -moz-transition: opacity ease-in-out 3s;
@@ -320,7 +299,6 @@ strong {
 	text-align: center;
 }
 
-
 // headings
 
 .logotitle {
@@ -331,6 +309,7 @@ strong {
 	font-weight: 100;
 }
 
+// change settings based on screen width
 @media all and (min-width: 1024px) {
 	.logotitle {
 		font-size: 80px;
@@ -350,6 +329,7 @@ strong {
 	font-weight: 100;
 }
 
+// change settings based on screen width
 @media all and (max-width: 500px) {
 	.bigtitle {
 		font-size: 40px;
@@ -401,11 +381,8 @@ strong {
 			border-bottom: thin solid;
 		}
 	}
-
-	h1 {
-
-	}
 }
+
 .note {
 	font-size: $font-size-base;
 	font-weight: $font-weight-base;
@@ -419,20 +396,12 @@ strong {
 			border-bottom: thin solid;
 		}
 	}
-
-	h1 {
-
-	}
 }
 
 .smallnote {
 	font-size: floor($font-size-base*0.9);
 	font-weight: $font-weight-base;
 	line-height: $font-size-base;
-}
-
-.journal-title {
-
 }
 
 .journal {
@@ -450,15 +419,15 @@ strong {
   overflow:hidden;
   padding-left:10px;
 }
+
 .tag_box li {
   line-height:28px;
 }
-.tag_box li i {
-  /*opacity:0.9;*/
-}
+
 .tag_box.inline li {
   float:left;
 }
+
 .tag_box a {
   /*padding: 3px 6px;*/
   /*margin: 2px;*/
@@ -468,6 +437,7 @@ strong {
   text-decoration:none;
   /*border:1px dashed #ccc;*/
 }
+
 .tag_box a span{
   vertical-align:super;
   font-size:0.8em;
